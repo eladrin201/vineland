@@ -1,15 +1,13 @@
 #archive .page {
-	
+
 }
 
 #archive .chapter {
-	margin-right: 1em;
 	font-weight: bold;
 	font-size: 1em;
 }
 
 #archive .arc {
-	margin-right: 2em;
 	font-size: 1.3em;
 	font-weight: bolder;
 }
