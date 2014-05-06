@@ -1,0 +1,35 @@
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2" id="main">
+		<h2 class="text-center" ng-show="page.title">{{page.title}}</h2>
+		<h4 class="text-center" ng-show="chapter.title">{{chapter.title}}</h4>
+		<h5 class="text-center" ng-show="arc.title">{{arc.title}}</h5>
+		<div class="row text-center">
+			<!-- Buttons Top --> 
+			<div class="btn-group">
+				<a id="firstbtntop" class="btn btn-default" ng-href="{{links.first}}">&lt;&lt;</a>
+				<a id="nextbtntop" class="btn btn-default" ng-class="{disabled:!links.prev}" ng-href="{{links.prev}}">&lt;</a>
+				<a id="archbtntop" class="btn btn-default" href="view/archive.html"><span class="glyphicon glyphicon-th"></span></a>
+				<a id="prevbtntop" class="btn btn-default" ng-class="{disabled:!links.next}" ng-href="{{links.next}}">&gt;</a>
+				<a id="latestbtntop" class="btn btn-default" ng-href="{{links.latest}}">&gt;&gt;</a>
+			</div>
+			
+			<!-- Comic -->
+			<img class="img-responsive" ng-src="{{page.image}}">
+
+			<!-- Buttons Bottom --> 
+			<div class="btn-group">
+				<a id="firstbtnbt" class="btn btn-default" ng-href="{{links.first}}">&lt;&lt;</a>
+				<a id="nextbtnbt" class="btn btn-default" ng-class="{disabled:!links.prev}" ng-href="{{links.prev}}">&lt;</a>
+				<a id="archbtnbt" class="btn btn-default" href="view/archive.html"><span class="glyphicon glyphicon-th"></span></a>
+				<a id="prevbtnbt" class="btn btn-default" ng-class="{disabled:!links.next}" ng-href="{{links.next}}">&gt;</a>
+				<a id="latestbtnbt" class="btn btn-default" ng-href="{{links.latest}}">&gt;&gt;</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- old archive sidebar -->
+	<!--<div class="col-md-4 text-right" id="archive">
+		<h2 class="text-center">Archive</h2>
+		<p ng-repeat="entry in archive"><a ng-href="{{entry.link}}" ng-class="{page:entry.type=='page', chapter:entry.type=='chapter', arc:entry.type=='arc'}">{{entry.title}}</a></p>
+	</div>-->
+</div>

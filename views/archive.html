@@ -1,0 +1,8 @@
+<div class="col-md-4 text-right" id="archive">
+		<h2 class="text-center">Archive</h2>
+		<p ng-repeat="entry in archive">
+			<a ng-href="{{entry.link}}" ng-class="{page:entry.type=='page', chapter:entry.type=='chapter', arc:entry.type=='arc'}">
+				{{entry.title}}
+			</a>
+		</p>
+	</div>

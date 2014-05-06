@@ -1,0 +1,86 @@
+/****** Stylesteet for Vineland Comic *****/
+/*
+Website by Allison Betancourt and Derrick Hinkle
+Theme designed by Kelsey Betancourt (and a little bit by Allison too!)
+Theme copywrite by Allison and Kelsey Betancourt
+*/
+
+/****** Global ********/
+body {
+	padding-top: 36px;
+	font-family: Georgia,serif;
+}
+a{
+	color:#42777d;
+}
+a.hover{
+	color:#10210f;
+}
+h4{
+	color:#333333;
+}
+
+#comments{
+	padding-bottom: 10px;
+}
+
+#issue{
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+.btn-default{
+	text-shadow:none;
+	color:#dbe8b5;
+}
+
+/******** Navbar *********/
+.navbar{
+	padding-top: 5px;
+	min-height: 36px;
+}
+.navbar-header{
+	min-height: 36px;
+}
+.navbar .navbar-toggle.collapsed{
+	color:#87a020;
+	text-shadow: 0 1px 0 #dbe8b5;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #42777d;
+}
+.navbar-default .navbar-toggle {
+	border-color: #87a020;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active{
+	background-color: #87a020;
+	border-color: #dbe8b5;
+}
+
+
+/******* Header images ******/
+.page-header img{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+/******** Footer ********/
+#footer {
+  /*height: 60px;*/
+	background-image: -webkit-linear-gradient(top, #ccd8ba 0, #b4c699 100%);
+	background-image: linear-gradient(to bottom, #ccd8ba 0, #b4c699 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffccd8ba', endColorstr='#ffb4c699', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	background-color: #ccd8ba;
+	border-color: #a4ba84;
+	margin:0 auto;
+	padding-top: 10px;
+}
+#footerfollow, #footerfollow img{
+	text-align: center;
+}
+.text-muted{
+	color:#333333;
+}

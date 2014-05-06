@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vineland</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+	<!-- Change the next line if you want to use a bootswatch theme -->
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-theme.min.css" />
+	
+  <!-- Here are our styles -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body ng-app="micro">
+    <!--Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    	<div class="container-fluid">
+    	<!-- Brand and toggle get grouped for better mobile display -->
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <!--<a class="navbar-brand" href="#">Brand</a>-->
+        </div>
+    		<!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    			<ul class="nav navbar-nav">
+        		<li><a class="active" href="#">Home</a></li>
+        		<li><a href="#/archive">Archive</a></li>
+        		<!-- Dropdown menu -->
+            <li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+          		<ul class="dropdown-menu">
+          			<li><a href="#">Authors</a></li>
+        				<li><a href="#">FAQ</a></li>
+        				<li><a href="#">Comic</a></li>
+        			</ul>
+      			</li>
+      			<li><a href="#">Shop</a></li>
+      			<li><a href="#">Patreon</a></li>
+    			</ul>
+
+    			<!--<form class="navbar-form navbar-right" role="search">
+        			<div class="form-group">
+        				<input type="text" class="form-control" placeholder="Search">
+        			</div>
+        			<button type="submit" class="btn btn-default">Submit</button>
+    			</form>-->
+    		</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+    </nav>
+
+  <!-- Header image -->
+  <div class="container-fluid">
+    <div class="page-header">
+      <a href="/"><img class="img-responsive" src="images/vineland-colored-title.png" alt="Vineland Comic" title="Vineland Comic"></a>
+      <img class="img-responsive subtitle" src="images/subtitle.png" alt="Alchemy">
+    </div> <!--end header-->
+  </div>
+
+  <!--Body-->
+  <div class="container-fluid" id="pageview">
+	  <!-- Our Angular Views will be injected into the next line, meaning they will be in a container -->
+	  <div ng-view=""></div>
+	</div>	
+
+	<!-- jQuery, then Bootstrap -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Angular Stack -->
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular/angular-route.min.js"></script>
+	<script src="lib/angular/angular-resource.min.js"></script>
+	<script src="lib/angular/angular-sanitize.min.js"></script>
+	<script src="lib/angular/angular-cookies.min.js"></script>
+	<!-- Our Angular Files -->
+	<script src="js/app.js"></script>
+	<script src="js/comics.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+</body>
+
+<footer>
+  <div class="container-fluid" id="footer">
+    <div class="row" id="footerfollow">
+      <h4>Follow us!</h4>
+      <a href="http://vinelandcomic.tumblr.com/" target="_blank"><img src="images/tumblr-icon.png"></a>
+      <a href="https://twitter.com/VinelandComic" target="_blank"><img src="images/twitter-icon.png"></a>
+      <img src="images/facebook-icon.png">
+      <img src="images/google-plus-icon.png">
+    </div>
+        
+    <div class="row">
+      <p class="text-muted credit" align="center"><small><span class="glyphicon glyphicon-copyright-mark"></span> <a href="http://allisonbetancourt.com">Allison Betancourt</a> and <a href="http://kelseybetancourt.com">Kelsey Betancourt</a>.</small></p>
+    </div>    
+  </div>
+</footer>
+
+</html>
