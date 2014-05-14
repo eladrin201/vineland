@@ -1,7 +1,7 @@
 'use strict';
 
 //We give you a basic controller to get you up and running.
-//This controller just serves static pages for you, giving you in essence a 
+//This controller just serves static pages for you, giving you in essence a
 //simple 'static' CMS.
 angular.module('micro').controller('pages', function($scope, $routeParams, $log){
 	$scope.title = '';
@@ -17,8 +17,8 @@ angular.module('micro').controller('pages', function($scope, $routeParams, $log)
 		return 'views/pages/'+$scope.title+'.html';
 		//$scope.$apply();
 	}
-	
-}).controller('comics', function($scope, $routeParams, $log, COMICS){
+
+}).controller('comics', function($scope, $routeParams, $log, $location, COMICS){
 	$scope.comics = COMICS;
 	//start at the latest entry
 	$scope.current = {arc: 0, chapter: 0, page: 0};
@@ -31,7 +31,7 @@ angular.module('micro').controller('pages', function($scope, $routeParams, $log)
 	}
 	if($routeParams.page){
 		$scope.current['page'] = Number($routeParams.page);
-	}	
+	}
 
 	//save our arc-chapter-page
 	$scope.arc = $scope.comics.arcs[$scope.current.arc];
@@ -153,7 +153,7 @@ angular.module('micro').controller('pages', function($scope, $routeParams, $log)
 		}
 		return archive;
 	}
-	
+
 	//keep our links so they are easily accessible from themes
 	$scope.links = {first: $scope.formLink($scope.first()), next: $scope.formLink($scope.nextPage()), prev: $scope.formLink($scope.prevPage()), latest: $scope.formLink($scope.latest())};
 	$scope.archive = $scope.buildArchiveAscending();
@@ -166,4 +166,9 @@ angular.module('micro').controller('pages', function($scope, $routeParams, $log)
 	$log.log($scope.links);
 	*/
 
+	//adds arrow key and click navigation
+	$('div#comicpost > img').click(function(){
+		console.log($scope.links.next);
+		$location.path($scope.links.next); // path not hash
+	});
 });

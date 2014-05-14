@@ -17,6 +17,12 @@ angular.module('micro', [
     templateUrl: 'views/comics.html', controller: 'comics'
   }).when('/archive', {
 		templateUrl: 'views/archive.html', controller: 'comics'
+	}).when('/authors', {
+		templateUrl: 'views/authors.html', controller: 'comics'
+	}).when('/faq', {
+		templateUrl: 'views/faq.html', controller: 'comics'
+	}).when('/comicabout', {
+		templateUrl: 'views/comicabout.html', controller: 'comics'
 	}).otherwise({
   	redirectTo: '/'
   });

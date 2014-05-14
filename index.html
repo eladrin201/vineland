@@ -16,7 +16,7 @@
 </head>
 <body ng-app="micro">
     <!--Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-fixed-top" role="navigation">
     	<div class="container-fluid">
     	<!-- Brand and toggle get grouped for better mobile display -->
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,21 +32,26 @@
     		<!-- Collect the nav links, forms, and other content for toggling -->
     		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     			<ul class="nav navbar-nav">
-        		<li><a class="active" href="#">Home</a></li>
+        		<li><a class="active" href="#/comics">Home</a></li>
         		<li><a href="#/archive">Archive</a></li>
         		<!-- Dropdown menu -->
             <li class="dropdown">
-          			<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+          			<a href="" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
           		<ul class="dropdown-menu">
-          			<li><a href="#">Authors</a></li>
-        				<li><a href="#">FAQ</a></li>
-        				<li><a href="#">Comic</a></li>
+          			<li><a href="#/authors">Authors</a></li>
+        				<li><a href="#/faq">FAQ</a></li>
+        				<li><a href="#/comicabout">Comic</a></li>
         			</ul>
       			</li>
-      			<li><a href="#">Shop</a></li>
-      			<li><a href="#">Patreon</a></li>
+      			<!--<li><a href="#">Shop</a></li>
+      			<li><a href="#">Patreon</a></li>-->
     			</ul>
-
+					<div class="navbar-right" id="headerfollow">
+						<a href="http://vinelandcomic.tumblr.com/" target="_blank"><img class="responsive" src="images/tumblr-icon.png"></a>
+						<a href="https://twitter.com/VinelandComic" target="_blank"><img class="responsive" src="images/twitter-icon.png"></a>
+						<a href="https://www.facebook.com/vinelandcomic" target="_blank"><img class="responsive" src="images/facebook-icon.png"></a>
+						<a href="https://google.com/+Vinelandcomic" target="_blank" rel="publisher"><img class="responsive" src="images/google-plus-icon.png"></a>
+					</div>
     			<!--<form class="navbar-form navbar-right" role="search">
         			<div class="form-group">
         				<input type="text" class="form-control" placeholder="Search">
@@ -60,8 +65,8 @@
   <!-- Header image -->
   <div class="container-fluid">
     <div class="page-header">
-      <a href="#/comic"><img class="img-responsive" src="images/vineland-colored-title.png" alt="Vineland Comic" title="Vineland Comic"></a>
-      <img class="img-responsive subtitle" src="images/subtitle.png" alt="Alchemy">
+      <a href="#/comic"><img class="img-responsive title" src="images/vineland-colored-title.png" alt="Vineland Comic" title="Vineland Comic"></a>
+      <img class="img-responsive" id="subtitle" src="images/subtitle.png" alt="Alchemy">
     </div> <!--end header-->
   </div>
 
@@ -89,15 +94,6 @@
 
 <footer>
   <div class="container-fluid" id="footer">
-    <div class="row" id="footerfollow">
-      <h4>Follow us!</h4>
-      <a href="http://vinelandcomic.tumblr.com/" target="_blank"><img src="images/tumblr-icon.png"></a>
-      <a href="https://twitter.com/VinelandComic" target="_blank"><img src="images/twitter-icon.png"></a>
-      <a href="https://www.facebook.com/vinelandcomic" target="_blank"><img src="images/facebook-icon.png"></a>
-      <a href="https://plus.google.com/115030045107414428215" rel="publisher">Google+</a>
-			<img src="images/google-plus-icon.png">
-    </div>
-
     <div class="row">
       <p class="text-muted credit" align="center">
 				<small>

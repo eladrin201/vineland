@@ -6,9 +6,9 @@ Theme copywrite by Allison and Kelsey Betancourt
 */
 
 /****** Global ********/
-body {
-	padding-top: 36px;
+html, body {
 	font-family: Georgia,serif;
+	height:100%;
 }
 a{
 	color:#42777d;
@@ -19,27 +19,23 @@ a.hover{
 h4{
 	color:#333333;
 }
-
-#comments{
-	padding-bottom: 10px;
-}
-
-#issue{
-	padding-top: 0px;
-	padding-bottom: 10px;
-}
 .btn-default{
 	text-shadow:none;
 	color:#FFFFFF;
 }
 
 /******** Navbar *********/
-.navbar{
-	padding-top: 5px;
-	min-height: 36px;
+nav{
+	background-color:#ccd8ba;
+	border-color:#dbe8b5;
+	min-height: 25px;
 }
-.navbar-header{
-	min-height: 36px;
+nav li a:hover, nav li a:active{
+	color:#000000;
+	background-color:#dbe8b5;
+}
+nav li{
+	padding-top: 2px;
 }
 .navbar .navbar-toggle.collapsed{
 	color:#87a020;
@@ -55,12 +51,20 @@ h4{
 	background-color: #87a020;
 	border-color: #dbe8b5;
 }
+#headerfollow img{
+	height: 30px;
+	width:auto;
+	margin-top:2px;
+}
 
 /******* Content (comic,archive,etc) *******/
 #comicpost img{
 	text-align:center;
 	margin-right:auto;
 	margin-left:auto;
+	width:600px;
+	margin-bottom:10px;
+	margin-top:10px;
 }
 
 /******* Header images ******/
@@ -70,23 +74,25 @@ h4{
 	margin-left: auto;
 
 }
+.title img{
+	width:75%;
+	height: auto;
+}
+#subtitle{
+	width:600px;
+	height:auto;
+}
 
 /******** Footer ********/
 #footer {
-  /*height: 60px;*/
-	background-image: -webkit-linear-gradient(top, #ccd8ba 0, #b4c699 100%);
-	background-image: linear-gradient(to bottom, #ccd8ba 0, #b4c699 100%);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffccd8ba', endColorstr='#ffb4c699', GradientType=0);
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 	background-color: #ccd8ba;
 	border-color: #a4ba84;
 	margin:0 auto;
-	margin-top: 10px;
+	padding-top: 10px;
+	margin-top: 20px;
+
 }
-#footerfollow, #footerfollow img{
-	text-align: center;
-}
+
 .text-muted{
 	color:#333333;
 }
