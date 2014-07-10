@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
-<body ng-app="micro">
+<body itemscope itemtype="http://schema.org/CreativeWork" ng-app="micro">
     <!--Navbar -->
     <nav class="navbar navbar-fixed-top" role="navigation">
     	<div class="container-fluid">
@@ -91,18 +91,16 @@
 	<script src="js/comics.js"></script>
 	<script src="js/services.js"></script>
 	<script src="js/controllers.js"></script>
-</body>
 
-<footer>
-  <div class="container-fluid" id="footer">
+  <div class="container-fluid text-center" id="footer">
     <div class="row">
-      <p class="text-muted credit" align="center">
+      <p class="text-muted credit">
 				<small>
-					<span class="glyphicon glyphicon-copyright-mark"></span><a href="http://allisonbetancourt.com">Allison Betancourt</a> and <a href="http://kelseybetancourt.com">Kelsey Betancourt</a>.
+					<span itemprop="copyrightYear" class="glyphicon glyphicon-copyright-mark">2014</span> <a itemprop="author" href="http://allisonbetancourt.com">Allison Betancourt</a> and <a itemprop="author" href="http://kbdraws.tumblr.com">Kelsey Betancourt</a>.
 				</small>
 			</p>
     </div>
   </div>
-</footer>
+</body>
 
 </html>

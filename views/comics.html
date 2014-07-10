@@ -1,8 +1,10 @@
 <div class="row">
-	<div class="container" id="main">
-		<h4 class="text-center" ng-show="page.title">{{chapter.title}}</h4>
-		<h5 class="text-center" ng-show="chapter.title">{{page.title}}</h5>
-		<div class="container text-center">
+	<div class="container text-center" id="main">
+		<div class="row" id="title">
+			<h4 ng-show="page.title">{{chapter.title}}</h4>
+			<h5 itemprop="headline" ng-show="chapter.title">{{page.title}}</h5>
+		</div>
+		<div class="row">
 			<!-- Buttons Top -->
 			<div class="btn-group">
 				<a id="firstbtntop" class="btn btn-default" ng-class="{disabled:!links.prev}" ng-href="{{links.first}}">
@@ -25,7 +27,7 @@
 			<!-- Comic -->
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2" id="comicpost">
-					<a ng-class="{disabled:!links.next}" ng-href="{{links.next}}" title="vineland"><img class="img-responsive" ng-src="{{page.image}}"></a>
+					<a ng-class="{disabled:!links.next}" ng-href="{{links.next}}" title="vineland"><img itemprop="associatedMedia" class="img-responsive" ng-src="{{page.image}}"></a>
 				</div>
 			</div>
 
@@ -47,24 +49,26 @@
 					<span class="glyphicon glyphicon-forward"></span>
 				</a>
 			</div>
+			<hr />
 
-			<!-- Comments by Disqus -->
-			<div id="disqus_thread"></div>
-	    <script type="text/javascript">
-	        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-	        var disqus_shortname = 'vinelandcomic'; // required: replace example with your forum shortname
+			<!-- Comments by Disqus-->
+			<div class="container" itemprop="comment" id="comments">
+				<div id="disqus_thread"></div>
+		    <script type="text/javascript">
+		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		        var disqus_shortname = 'vinelandcomic'; // required: replace example with your forum shortname
 
-	        /* * * DON'T EDIT BELOW THIS LINE * * */
-	        (function() {
-	            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	        })();
-	    </script>
-	    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
+		        /* * * DON'T EDIT BELOW THIS LINE * * */
+		        (function() {
+		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		        })();
+		    </script>
+		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+			</div> <!-- /#comments -->
 		</div>
-	</div> <!-- /main -->
+	</div> <!-- /#main -->
 
 </div>

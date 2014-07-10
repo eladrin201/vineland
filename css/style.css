@@ -30,9 +30,12 @@ nav{
 	border-color:#dbe8b5;
 	min-height: 25px;
 }
-nav li a:hover, nav li a:active{
+.navbar-brand, .navbar-nav>li>a:hover, .navbar-brand, .navbar-nav>li>a:active, .navbar-nav>li>a.dropdown-toggle:hover, .navbar-nav>li>a.dropdown-toggle:active{
 	color:#000000;
-	background-color:#dbe8b5;
+	background-color:#ccd8ba;
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+	background-color:#ccd8ba;
 }
 nav li{
 	padding-top: 2px;

@@ -18,7 +18,7 @@ angular.module('micro').controller('pages', function($scope, $routeParams, $log)
 		//$scope.$apply();
 	}
 
-}).controller('comics', function($scope, $routeParams, $log, $location, COMICS){
+}).controller('comics', function($scope, $routeParams, $log, COMICS){
 	$scope.comics = COMICS;
 	//start at the latest entry
 	$scope.current = {arc: 0, chapter: 0, page: 0};
@@ -37,31 +37,6 @@ angular.module('micro').controller('pages', function($scope, $routeParams, $log)
 	$scope.arc = $scope.comics.arcs[$scope.current.arc];
 	$scope.chapter = $scope.arc.chapters[$scope.current.chapter];
 	$scope.page = $scope.chapter.pages[$scope.current.page];
-
-	//adds arrow key and click navigation
-	$(document).keydown(function(key) {
-			switch(parseInt(key.which,10)) {
-				var url;
-				var newu;
-			// Left arrow key pressed
-			case 37:
-				console.log("left");
-				console.log(window.location);
-				url = window.location.split('#')[0];
-				console.log(url);
-				newu = url + $scope.links.prev;
-				console.log(newu);
-				window.location = window.location.split('#')[0] + $scope.links.prev;
-				break;
-			// Right Arrow Pressed
-			case 39:
-				console.log("right");
-				console.log(window.location);
-				window.location = window.location.split('#')[0] + $scope.links.next;
-				break;
-		}
-	});
-
 
 	//first possible page
 	$scope.latest = function(){
