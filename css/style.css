@@ -8,7 +8,7 @@ Theme copywrite by Allison and Kelsey Betancourt
 /****** Global ********/
 html, body {
 	font-family: Georgia,serif;
-	height:100%;
+	height:auto;
 }
 a{
 	color:#42777d;
@@ -41,7 +41,7 @@ nav li{
 	color:#87a020;
 	text-shadow: 0 1px 0 #dbe8b5;
 }
-.navbar-default .navbar-toggle .icon-bar{
+.icon-bar{
 	background-color: #42777d;
 }
 .navbar-default .navbar-toggle {
@@ -52,17 +52,15 @@ nav li{
 	border-color: #dbe8b5;
 }
 #headerfollow img{
-	height: 30px;
+	height: 25px;
 	width:auto;
-	margin-top:2px;
+	margin:3px;
+	display: inline;
 }
 
 /******* Content (comic,archive,etc) *******/
 #comicpost img{
-	text-align:center;
-	margin-right:auto;
-	margin-left:auto;
-	width:600px;
+	magin-left:0px;
 	margin-bottom:10px;
 	margin-top:10px;
 }
@@ -79,7 +77,7 @@ nav li{
 	height: auto;
 }
 #subtitle{
-	width:600px;
+	width:50%;
 	height:auto;
 }
 
