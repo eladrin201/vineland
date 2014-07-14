@@ -1,8 +1,8 @@
 <div class="row">
 	<div class="container text-center" id="main">
 		<div class="row" id="title">
-			<h4 ng-show="page.title">{{chapter.title}}</h4>
-			<h5 itemprop="headline" ng-show="chapter.title">{{page.title}}</h5>
+			<h4 ng-show="chapter.title">{{chapter.title}}</h4>
+			<h5 itemprop="headline" ng-show="page.title">{{page.title}}</h5>
 		</div>
 		<div class="row">
 			<!-- Buttons Top -->
@@ -57,6 +57,7 @@
 		    <script type="text/javascript">
 		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 		        var disqus_shortname = 'vinelandcomic'; // required: replace example with your forum shortname
+						var disqus_identifier = 'vinelandcomic+{{arc.title}}+{{chapter.title}}+{{page.title}}'
 
 		        /* * * DON'T EDIT BELOW THIS LINE * * */
 		        (function() {
